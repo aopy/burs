@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Burs Veren Yerler</title>
+<link rel="stylesheet" href="{{STATIC_URL}}css/style.css" type="text/css" media="screen, projection" />
+</head>
+
+<body>
+{% load enslug %}
+
+<div class="main">
+<div class="dp100 header">
+<h1>&#9788;<span>Burs</span>VerenYerler
+<br/>
+</h1>
+</div>
+
+<div class="dp100 navTop">
+<ul>
+<li>
+<a href="/">Ana Sayfa</a>
+</li>
+</ul>
+
+</div>
+
+<div class="dp75 content">
+<div class="margin-right-20">
+<h2>{{ sehir }} Bursları</h2>
+
+</div>
+<div class="dp100">
+
+<ul>
+{% for burs in sehirb %}
+<li><a href="{% url burslar.views.burs_detay burs.isim|enslug %}">{{ burs }}</a></li>
+{% endfor %}
+</ul>
+
+</div>
+</div>
+</div>
+
+<div class="dp25 rightColumn">
+<div class="navRight margin-bottom-20">
+
+<h2>Burs veren Kuruluşlar</h2>
+
+<ul>
+{% for burs in burslar %}
+<li><a href="{% url burslar.views.burs_detay burs.isim|enslug %}">{{ burs }}</a></li>
+{% endfor %}
+</ul>
+
+</div>
+</div>
+
+<div class="dp100 footer">
+Onur Ates - <a href="/">Burs Veren Yerler</a>
+</div>
+
+</div>
+
+</body>
+</html>
+

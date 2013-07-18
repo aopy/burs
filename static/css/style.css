@@ -1,0 +1,103 @@
+/* CSS Reset */
+
+*, html, body, div, p {margin: 0; padding: 0; border: 0;}
+
+/* CSS Grid */
+
+.main {margin: 0 auto;width: 95%;}
+
+.dp20, .dp25, .dp33, .dp50, .dp75, .dp100 {
+    float: left;
+    display: inline;
+}
+
+*:first-child+html .dp20, *:first-child+html .dp25, *:first-child+html .dp33, *:first-child+html .dp50, *:first-child+html .dp75, *:first-child+html .dp100 {
+    margin-left: -0.04em;
+}
+
+/* dp = div percent */
+
+.dp20 {width: 20%;}
+.dp25 {width: 25%;}
+.dp33 {width: 33.33%;}
+.dp50 {width: 50%;}
+.dp75 {width: 75%;}
+.dp100 {width: 100%;}
+
+.clear {clear: both;}
+
+.header {height: 120px; line-height: 1.3;}
+.header span {color: #999;font-size: 34px;font-weight: bold; 
+}
+
+.navTop {margin: 0 0 20px 0;}
+
+.footer {
+    border-top: 1px solid #B0B0B0;
+    font-size: 11px; 
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* margins */
+
+.margin-10 {margin: 10px;}
+.margin-top-10 {margin-top: 10px;}
+.margin-right-10 {margin-right: 10px;}
+.margin-bottom-10 {margin-bottom: 10px;}
+.margin-left-10 {margin-left: 10px;}
+
+.margin-20 {margin: 20px;}
+.margin-top-20 {margin-top: 20px;}
+.margin-right-20 {margin-right: 20px;}
+.margin-bottom-20 {margin-bottom: 20px;}
+.margin-left-20 {margin-left: 20px;}
+
+/* Navigation Top */
+
+div.navTop ul {margin: 0; padding: 0;}
+
+div.navTop li {display: inline; list-style-type: none;margin-right: 10px;}
+
+div.navTop li a {
+    color: #000;
+    font-size: 11px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+div.navTop li a:hover {color: #666;}
+
+/* Navigation Right */
+
+div.navRight ul {margin: 0; padding: 0;}
+div.navRight li {list-style-type: none;}
+div.navRight li a {font-weight: normal; letter-spacing: 2px; text-transform: none;}
+
+/* Site Styles */
+
+body {background: url(bg.png) repeat-x 0 118px; color: #666; font: normal 12px / 1.6 verdana, sans-serif;} 
+
+h1,h2,h3,h4,h5,h6,p,ul,ol {font-weight: normal; margin-bottom: 16px;}
+
+h1 {color: #000; font-size: 34px;}
+h2 {color: #996600; font-size: 26px;}
+h3 {color: #000; font-size: 18px;}
+h4,h5,h6 {border-bottom: 1px solid #000; color: #000; font-size: 14px;}
+
+div.content ul {margin-left: 30px;}
+div.content ol {margin-left: 36px;}
+
+a {color:#145D89; font-weight: bold; text-decoration:none;}
+a:hover {border-bottom-width: 0; color: #996600; text-decoration:none;}
+	
+b,strong {text-transform: capitalize;}	
+
+/* Gallery */
+
+.gallery {margin-bottom: 20px; text-align: left;} 
+div.gallery {font-size: 11px;}
+
+
